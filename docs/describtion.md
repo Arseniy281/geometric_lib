@@ -41,15 +41,26 @@
 + perimeterea(3, 4, 5) = 12 - для треугольника
 
 # История изменений с хэшами коммитов:
+```
+33a75c7 Исправлен файл rectangle.py
 
-#### 33a75c7 Исправлен файл rectangle.py
+867e000 Добавлен файл rectangle.py
 
-#### 867e000 Добавлен файл rectangle.py
+fb52f64 Добавлен файл triangle.py
 
-#### fb52f64 Добавлен файл triangle.py
+d078c8d (origin/main, origin/HEAD, main) L-03: Docs added
 
-#### d078c8d (origin/main, origin/HEAD, main) L-03: Docs added
+8ba9aeb L-03: Circle and square added
+```
 
-#### 8ba9aeb L-03: Circle and square added
+# <span style="color: #2aff04ff">Заголовок # 1.</span>
 
+# ~~текст~~
 
+# __текст__
+
+# *текст*
+
+# <ins>текст</ins>
+
+![](https://repository-images.githubusercontent.com/283872188/3048a980-8e23-11eb-8792-50abd7e3b7b3)
