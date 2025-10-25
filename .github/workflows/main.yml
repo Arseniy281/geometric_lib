@@ -1,0 +1,33 @@
+name: Run Unit Tests
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    
+    runs-on: ${{ matrix.os }}
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+        
+    - name: Display Python version
+      run: python -c "import sys; print(f'Python version: {sys.version}')"
+      
+    - name: Run unit tests
+      run: python -m unittest test_geometry.py -v
+      
+    - name: Test completion message
+      run: echo "Unit tests completed successfully on ${{ matrix.os }}"
