@@ -24,10 +24,10 @@ jobs:
         python-version: '3.9'
         
     - name: Display Python version
-      run: python -c "import sys; print(f'Python version: {sys.version}')"
+      run: python -c "import sys; print('Python version:', sys.version)"
       
     - name: Run unit tests
       run: python -m unittest test_geometry.py
       
     - name: Test completion message
-      run: echo "Unit tests completed successfully on ${{ matrix.os }}"
+      run: echo "Unit tests completed successfully"
